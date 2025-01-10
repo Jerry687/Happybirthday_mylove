@@ -13,30 +13,22 @@ body {
 /* Hero Section */
 .hero {
     background: url('images/bg.jpg') no-repeat center center/cover;
-    color: #8B4513;
-    padding: 0; /* Remove padding */
-    height: 100vh; /* Full viewport height */
-    display: flex; /* Center content */
-    flex-direction: column; /* Align content vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    text-align: center; /* Center text */
+    color: #8B4513; /* 棕色字体 */
+    height: 100vh; /* 占满屏幕高度 */
+    display: flex; /* 使用 flexbox 布局 */
+    flex-direction: column;
+    justify-content: flex-end; /* 让内容向下对齐 */
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20%; /* 调整文本距离底部的距离 */
 }
 
-
-.hero h1 {
-    font-size: 3rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
+/* 修改按钮的样式以与字体颜色搭配 */
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #ff4d4d;
-    color: white;
+    background: #D2B48C; /* 浅棕色背景 */
+    color: #8B4513; /* 棕色字体 */
     text-decoration: none;
     border-radius: 25px;
     font-size: 1rem;
@@ -44,8 +36,10 @@ body {
 }
 
 .btn:hover {
-    background: #ff8080;
+    background: #8B4513; /* 深棕色 */
+    color: white; /* 白色字体 */
 }
+
 
 /* About Section */
 .about {
