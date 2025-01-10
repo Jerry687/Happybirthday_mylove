@@ -20,7 +20,7 @@ body {
     justify-content: flex-end; /* 让内容向下对齐 */
     align-items: center;
     text-align: center;
-    padding-bottom: 20%; /* 调整文本距离底部的距离 */
+    padding-bottom: 30%; /* 调整文本距离底部的距离 */
 }
 
 /* 修改按钮的样式以与字体颜色搭配 */
