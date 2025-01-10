@@ -13,8 +13,8 @@ body {
 /* Hero Section */
 .hero {
     background: url('images/bg.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 0; /* Remove padding */
+    color: #8B4513;
+    padding-top: 60%;
     height: 100vh; /* Full viewport height */
     display: flex; /* Center content */
     flex-direction: column; /* Align content vertically */
