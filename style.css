@@ -1,85 +1,86 @@
-/* General Styles */
-body {
+/* General Reset */
+* {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #f8e6e0;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    text-align: center;
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
 /* Hero Section */
 .hero {
-    background: url('images/bg.jpg') no-repeat center center/cover;
-    color: #8B4513; /* 棕色字体 */
-    height: 100vh; /* 占满屏幕高度 */
-    display: flex; /* 使用 flexbox 布局 */
+    background: url('images/bg.jpg') no-repeat center center/cover; /* Replace with your image path */
+    color: #8B4513; /* Brown font color */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox layout */
     flex-direction: column;
-    justify-content: flex-end; /* 让内容向下对齐 */
-    align-items: center;
-    text-align: center;
-    padding-bottom: 20%; /* 调整文本距离底部的距离 */
+    justify-content: flex-end; /* Align content to the bottom */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+    padding: 0; /* Remove extra padding */
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
 
-/* 修改按钮的样式以与字体颜色搭配 */
+/* Text Styles */
+.hero h1 {
+    font-size: 3rem; /* Adjust headline size */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Adjust paragraph size */
+}
+
+/* Button Styles */
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #D2B48C; /* 浅棕色背景 */
-    color: #8B4513; /* 棕色字体 */
+    background: #D2B48C; /* Light brown */
+    color: #8B4513; /* Dark brown text */
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 25px; /* Rounded corners */
     font-size: 1rem;
-    transition: 0.3s;
+    transition: 0.3s; /* Smooth hover effect */
+    margin-top: 20px; /* Space between text and button */
 }
 
 .btn:hover {
-    background: #8B4513; /* 深棕色 */
-    color: white; /* 白色字体 */
+    background: #8B4513; /* Darker brown */
+    color: white; /* White text on hover */
 }
-
 
 /* About Section */
 .about {
     padding: 50px;
-    background: #fff;
+    background: #f8f8f8;
+    text-align: center;
 }
 
-.photo-wall {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.photo-wall img {
-    max-width: 150px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.about p {
+    font-size: 1.2rem;
+    color: #666;
 }
 
-/* Memories Section */
-.memories {
-    padding: 50px;
-    background: #ffe6e6;
+/* Footer Section */
+.footer {
+    background-color: #8B4513; /* Dark brown background */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.timeline {
-    display: flex;
-    justify-content: space-around;
-}
-
-.event {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-footer {
-    background: #ff4d4d;
-    color: white;
-    padding: 20px 0;
+.footer p {
+    margin: 0;
+    font-size: 1rem;
 }
