@@ -16,12 +16,12 @@ body {
     color: #8B4513; /* Brown font color */
     height: 100vh; /* Full viewport height */
     display: flex; /* Flexbox layout */
-    flex-direction: column;
-    justify-content: flex-end; /* Align content to the bottom */
+    flex-direction: column; /* Align items vertically */
+    justify-content: flex-start; /* Start alignment */
     align-items: center; /* Center horizontally */
     text-align: center; /* Center text */
-    padding: 0; /* Remove extra padding */
-    overflow: hidden; /* Ensure content doesn't overflow */
+    padding-top: 50%; /* Push content down (adjust to position) */
+    padding-bottom: 25%; /* Keep content from being too close to bottom */
 }
 
 /* Text Styles */
@@ -51,6 +51,7 @@ body {
     background: #8B4513; /* Darker brown */
     color: white; /* White text on hover */
 }
+
 
 /* About Section */
 .about {
