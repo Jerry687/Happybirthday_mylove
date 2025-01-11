@@ -8,6 +8,10 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
+    scroll-behavior: smooth; /* Smooth scrolling between sections */
+    height: 100vh; /* Ensure the full height for scroll-snap */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory; /* Enable vertical snap scrolling */
 }
 
 /* Hero Section */
@@ -22,6 +26,7 @@ body {
     text-align: center; /* Center text */
     padding-top: 50%; /* Push content down (adjust to position) */
     padding-bottom: 25%; /* Keep content from being too close to bottom */
+    scroll-snap-align: start; /* Snap alignment to top of viewport */
 }
 
 /* Text Styles */
@@ -52,12 +57,16 @@ body {
     color: white; /* White text on hover */
 }
 
-
 /* About Section */
 .about {
-    padding: 50px;
-    background: #f8f8f8;
+    background: #f8f8f8; /* Light background color */
+    height: 100vh; /* Full viewport height */
     text-align: center;
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center horizontally */
+    scroll-snap-align: start; /* Snap alignment to top of viewport */
 }
 
 .about h2 {
@@ -68,6 +77,9 @@ body {
 .about p {
     font-size: 1.2rem;
     color: #666;
+    max-width: 80%; /* Limit paragraph width for better readability */
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 /* Footer Section */
@@ -76,9 +88,7 @@ body {
     color: white; /* White text color */
     text-align: center;
     padding: 15px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    scroll-snap-align: start; /* Snap alignment to top of viewport */
 }
 
 .footer p {
